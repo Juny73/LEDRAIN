@@ -1,0 +1,166 @@
+.navegacion{
+    text-align: right;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+}
+.logo h1 {
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fc01bd;
+    color: #ffffff;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #00ffcc;
+}
+.titulo-uno{
+    color: aquamarine;
+}
+body {
+    background-image: url('img/neon-gaming-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+.StyleInicio{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #ffffff;
+}
+/* Estilos generales del catálogo */
+.catalog-section {
+    padding: 60px 20px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.catalog-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.catalog-subtitle {
+    color: #5dd1da;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Cuadrícula de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Tarjeta individual */
+.product-card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(236, 72, 153, 0.2); /* Sutil brillo inspirado en tu paleta */
+}
+
+/* Imagen del producto */
+.product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Información del producto */
+.product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #f8fafc;
+}
+
+.product-desc {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.product-price {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #38bdf8; /* Color de acento tecnológico */
+    margin-bottom: 15px;
+}
+
+/* Botón de compra */
+.btn-buy {
+    background-color: #ec4899; /* Tono magenta a juego con tu barra superior */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.btn-buy:hover {
+    background-color: #db2777;
+}
+
