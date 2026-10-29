@@ -91,6 +91,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 /* Tarjeta individual */
@@ -234,5 +235,74 @@ body {
     color: #718096;
     font-size: 0.85rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+/* ==========================================
+   RESPONSIVE DESIGN GENERAL - LEDRAIN
+   ========================================== */
+
+/* Ajustes globales para evitar desbordamientos horizontales */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Para pantallas medianas y tablets (menores a 992px) */
+@media screen and (max-width: 992px) {
+    /* Ajusta el espaciado general del cuerpo o contenedores principales */
+    body {
+        padding: 0;
+    }
+}
+
+/* Para dispositivos móviles y tablets pequeñas (menores a 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Barra de Navegación */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* 2. Títulos principales */
+    h1 {
+        font-size: 2rem !important;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    /* 3. Catálogo de productos (Pasa de 3 columnas a 1 o 2) */
+    .catalogo-grid, /* Reemplaza o adapta con la clase que uses para tu grid de productos */
+    .productos-container {
+        grid-template-columns: 1fr !important; /* Una sola columna en celulares */
+        padding: 0 15px;
+    }
+}
+
+/* Para teléfonos muy pequeños (menores a 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem !important;
+    }
+
+    /* Reduce márgenes excesivos en pantallas diminutas */
+    .producto-card {
+        margin: 0 5px;
+    }
 }
 
